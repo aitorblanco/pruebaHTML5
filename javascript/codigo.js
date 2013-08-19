@@ -28,8 +28,8 @@ function pintar(num_cartas, num_elem_x, num_elem_y, num_iguales) {
 	canvas.width = (num_elem_x*dis_x) + pos_ini_x;
 	canvas.height = (num_elem_y*dis_y) + pos_ini_y;
 	
-	col_defect = ["white", "black", "gray", "red", "darkred", "deeppink", "orangered", "yellow", 
-	"aqua", "saddlebrown", "purple", "greenyellow", "lime", "darkgreen"];
+	col_defect = ["white", "black", "gray", "lightsalmon", "red", "darkred", "deeppink", "orangered", "orange", 
+	"yellow", "aqua", "saddlebrown", "purple", "darkviolet", "greenyellow", "lime", "darkgreen", "olive"];
 	colores = [""];
 	for (p = 0; p < (num_cartas/num_iguales); p++){
 		colores[p] = col_defect[p];
@@ -149,5 +149,5 @@ function cambiar_tablero(num_cartas, num_elem_x, num_elem_y){
 }
 
 function ayuda(){
-	alert("Esto es la ayuda del juego");
+	alert("Esto es la ayuda del juego:\nEl objetivo es encontrar la cartas iguales, ya sean parejas, trios o cuartetos. El jugador gana la partida cuando destapa correctamente todas las cartas del tablero. El usuario tiene la capacidad de escoger el numero de cartas que se muestran en el tablero pulsando en la tabla \"Cartas en el tablero\" (12,24,36) y el numero de cartas iguales pulsando en la tabla \"Cartas iguales\"(2,3,4).\n\nDISFRUTA DEL JUEGO!!");
 }
