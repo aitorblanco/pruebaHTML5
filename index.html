@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Prueba</title>
-<link rel="stylesheet" type="text/css" href="css/estilo.css" >
-</head>
-<body>
-<h1>Esto es una prueba desde la clase cambiado por Aitor</h1>
-<button type="button" onclick="pulsado(this)">No pulses!</button>
-
-<script src="javascript/codigo.js"></script>
-</body>
+	<head>
+		<!-- Titulo del juego -->
+		<title>Juego de las cartas iguales</title>
+		
+		<!-- Incluir fichero de estilos -->
+		<link rel="stylesheet" type="text/css" href="css/estilo.css" title="estilo1">
+		<!-- Incluir el fichero con codigo javascript -->
+		<script type="text/javascript" src="javascript/codigo.js"></script>
+		<!-- Incluir la librería JQuery -->
+		<script type="text/javascript" src="javascript/JQuery.js"></script>
+		<!-- Incluir la librería jcanvas para poder utilizar jQuery con canvas -->
+		<script type="text/javascript" src="javascript/jcanvas.min.js"></script>
+	</head>
+	<body onload="pintar(6,3,2,2)">
+		<h1>El asombroso juego de encontrar las cartas iguales</h1>
+		<ul id = "menu">
+			<li onclick = "visible(1)"> Cartas iguales
+				<ul id = "iguales">
+					<li onclick = "cambiar_iguales(2)">2</li>
+					<li onclick = "cambiar_iguales(3)">3</li>
+					<li onclick = "cambiar_iguales(4)">4</li>
+				</ul>
+			</li>
+			<li onclick = "visible(2)"> Cartas en el tablero
+				<ul id = "tablero">
+					<li onclick = "cambiar_tablero(6,3,2)">6</li>
+					<li onclick = "cambiar_tablero(12,4,3)">12</li>
+					<li onclick = "cambiar_tablero(18,6,3)">18</li>
+					<li onclick = "cambiar_tablero(24,6,4)">24</li>
+				</ul>
+			</li>
+		</ul>
+		<div>
+			<canvas id="canvas" width="400" height="350"></canvas>
+		</div>
+		<button onclick = "ayuda()">Ayuda</button>
+	</body>
 </html>

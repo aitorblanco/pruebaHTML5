@@ -1,1 +1,55 @@
-body { color: blue; }
+body { 
+	color: blue; 
+}
+
+canvas{
+	border-color: #000000;
+	border-width: 0.5em;
+	border-style: solid;
+	margin-top: 1em;
+	margin-left: 2em;
+}
+
+h1{
+	text-align: center;
+}
+
+button{
+	margin-top: 1em;
+	margin-left: 2em;
+}
+
+#menu {
+	position: relative;
+}
+
+#menu > li {
+	position: relative;
+	margin-top: 1em;
+	margin-right: 2em;
+	float: right;
+	height: 1.6em; 
+	width: 9.3em; 
+	text-align: center; 
+	line-height: 1.6em; 
+	border: 0.15em solid black; 	 
+	padding: 0.3em; 
+	background: white; 	
+	list-style: none; 	
+}
+
+#menu > li > ul {
+	position: absolute;
+	top: 2.5em;
+	right: 0em;
+	width: 9.3em;
+	text-align: center;
+	line-height: 1.6em;	
+	border: 0.15em solid black;
+	padding: 0.3em;	
+	background: blue;
+	color: white; 
+	list-style: none;
+	z-index: 1000;
+	visibility: hidden;
+}
